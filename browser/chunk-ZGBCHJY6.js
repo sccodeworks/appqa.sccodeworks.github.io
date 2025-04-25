@@ -1,0 +1,1 @@
+import{Za as n,_a as i,ga as o,jb as r,nb as s}from"./chunk-JVSP5UF7.js";var c=(()=>{class e{static{this.\u0275fac=function(t){return new(t||e)}}static{this.\u0275cmp=o({type:e,selectors:[["app-customer-login"]],standalone:!0,features:[s],decls:2,vars:0,template:function(t,m){t&1&&(n(0,"p"),r(1,"customer-login works!"),i())}})}}return e})();export{c as CustomerLoginComponent};
