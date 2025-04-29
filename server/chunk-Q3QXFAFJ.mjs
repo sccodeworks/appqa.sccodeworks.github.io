@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-import{Sa as n,Ta as i,X as o,cb as r,gb as s}from"./chunk-C7ACHG65.mjs";import"./chunk-COT65Y5O.mjs";var c=(()=>{class e{static{this.\u0275fac=function(t){return new(t||e)}}static{this.\u0275cmp=o({type:e,selectors:[["app-customer-login"]],standalone:!0,features:[s],decls:2,vars:0,template:function(t,m){t&1&&(n(0,"p"),r(1,"customer-login works!"),i())}})}}return e})();export{c as CustomerLoginComponent};
