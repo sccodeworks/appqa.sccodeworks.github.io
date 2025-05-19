@@ -223,6 +223,15 @@ STYLESHEET INDEXING
     box-orient: vertical; /* Standard property */
     line-clamp: 4;
 }
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS and android*/
+}
+.edu-blog-area {
+    margin-left:4px;
+    margin-right:4px;
+}
 .feature-table {
     width: 100%;
     border-collapse: collapse;
@@ -5922,6 +5931,63 @@ body.sal-disabled [data-sal|='flip'] {
     }
 }
 
+
+/* iPhone 15 & 16 (regular/pro/pro max) portrait */
+@media only screen 
+  and (device-width: 430px) 
+  and (device-height: 932px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+  
+  .about-content {
+    padding-left: 0;
+  }
+}
+
+/* Replace with actual TPhone 16 Pro dimensions if different */
+@media only screen 
+  and (device-width: 412px) 
+  and (device-height: 915px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+  
+  .about-content {
+    padding-left: 0;
+  }
+}
+/* .features-box { */
+   .categorie-style-3, .categorie-grid {
+  width: 100%;
+  max-width: 360px; 
+  /* or any limit you prefer */
+  /* min-height: 200px; */
+   /* optional: to keep heights consistent */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.features-area-2 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .features-area-2 .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features-area-2 .col-sm-12 {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .features-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .about-content .section-title {
     margin-bottom: 20px;
 }
@@ -5986,6 +6052,9 @@ body.sal-disabled [data-sal|='flip'] {
     .about-style-1 .about-image-gallery .shape-group li {
         display: none;
     }
+   .about-style-4 .about-content .section-title p {
+    margin-top: 0px;
+}
 }
 
 .about-style-1 .about-image-gallery .shape-group li.shape-1 {
@@ -16340,20 +16409,20 @@ margin-top:120px !important;
         margin-top:50px !important;
         }
         .hero-banner.hero-style-1 {
-            padding-top: 22px;
+            padding-top: 62px;
             margin-top: 40px !important;
         }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-banner.hero-style-1 {
-        padding-top: 25px;
+        padding-top: 62px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .hero-banner.hero-style-1 {
-        padding-top: 22px;
+        padding-top: 62px;
         margin-top: 30px !important;
     }
     .section-gap-videos-about-area{
@@ -30443,8 +30512,12 @@ margin-top:120px !important;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
-
+.my-resources-area{
+   padding-top:100px 
+}
 @media only screen and (max-width: 1199px) {
     .edu-header .header-navbar {
         -webkit-box-pack: justify;
@@ -30452,6 +30525,9 @@ margin-top:120px !important;
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
+    .my-resources-area{
+   padding-top:10px 
+}
 }
 
 .edu-header .header-navbar .header-mainnav {
