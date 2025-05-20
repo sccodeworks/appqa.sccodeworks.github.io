@@ -5927,7 +5927,8 @@ body.sal-disabled [data-sal|='flip'] {
 
 @media only screen and (max-width: 991px) {
     .about-content {
-        padding-left: 0;
+        padding-left: 20px;
+        padding-right:5px;
     }
 }
 
