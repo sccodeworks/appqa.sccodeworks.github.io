@@ -974,6 +974,12 @@ Custom Row
         order: 2 !important;
     }
 }
+@media screen and (min-width: 2560px) {
+  .container {
+    margin-left: 10px;
+    width: 100%;
+  }
+}
 
 #edublink-preloader {
     position: fixed;
