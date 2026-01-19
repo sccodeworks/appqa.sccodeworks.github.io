@@ -30669,15 +30669,15 @@ margin-top:120px !important;
 
 .edu-header.header-fullwidth .header-mainmenu,
   .edu-header.header-fullwidth .header-top-bar {
-    padding-left: 62px;
-    padding-right: 62px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 @media only screen and (max-width: 1699px) {
     .edu-header.header-fullwidth .header-mainmenu,
       .edu-header.header-fullwidth .header-top-bar {
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-left: 2px;
+        padding-right: 2px;
     }
 }
 
@@ -31515,6 +31515,7 @@ margin-top:120px !important;
 
 .mainmenu-nav .mainmenu li.has-droupdown .submenu li {
     position: relative;
+    white-space: nowrap;
 }
 
 .mainmenu-nav .mainmenu li.has-droupdown .submenu li a {
