@@ -7724,7 +7724,7 @@ body.sal-disabled [data-sal|='flip'] {
   Call To Action Styles
 ---------------------*/
 .edu-cta-banner-area {
-    padding: 102px 0;
+    padding: 102px 0 10px 0;
     background-color: #f0f4f5;
     position: relative;
     z-index: 1;
@@ -7739,21 +7739,27 @@ body.sal-disabled [data-sal|='flip'] {
     height: 100%;
     background-image: url(../images/cta/cta.svg);
     -webkit-filter: brightness(0) saturate(100%) invert(52%) sepia(75%) saturate(451%) hue-rotate(121deg) brightness(96%) contrast(90%);
-    filter: brightness(0) saturate(100%) invert(52%) sepia(75%) saturate(451%) hue-rotate(121deg) brightness(96%) contrast(90%);
-    background-position: center bottom;
+   filter: brightness(0) saturate(100%)
+        invert(60%)
+        sepia(80%)
+        saturate(1800%)
+        hue-rotate(165deg)
+        brightness(110%)
+        contrast(88%);
+  background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .edu-cta-banner-area {
-        padding: 80px 0 70px;
+        padding: 80px 0 10px 0;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .edu-cta-banner-area {
-        padding: 80px 0 70px;
+        padding: 80px 0 10px 0;
     }
 }
 
