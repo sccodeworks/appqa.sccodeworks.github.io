@@ -3722,7 +3722,7 @@ Scroll Down Button Animation
 }
 
 .breadcrumb-style-4 {
-    padding: 110px 0 105px;
+    padding: 10px 0 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -25909,23 +25909,23 @@ margin-top:120px !important;
     Remote Training Styles Starts
 =========================================================================*/
 .hero-style-11 {
-    padding: 240px 0 160px;
+    padding: 240px 0 8px;
 }
 
 @media only screen and (max-width: 1199px) {
     .hero-style-11 {
-        padding: 180px 0 130px;
+        padding: 180px 0 8px;
     }
 }
 
 @media only screen and (max-width: 575px) {
     .hero-style-11 {
-        padding: 150px 0 80px;
+        padding: 180px 0 8px;
     }
 }
 
 .hero-style-11.remote-training {
-    min-height: 840px;
+    /* min-height: 800px; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -34442,7 +34442,12 @@ blockquote:after {
         0 4px 12px rgba(0, 0, 0, 0.12),
         inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
-
+.contentquote .quote1{
+    text-decoration: underline;
+    font-family: var(--font-primary);
+    font-size: var(--h5);
+    color: var(--color-primary);
+}
 
 @media only screen and (max-width: 767px) {
     blockquote:after {
