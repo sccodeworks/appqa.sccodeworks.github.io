@@ -1361,7 +1361,7 @@ For leaders, this is a critical moment. Recognizing these signs early creates op
 <br><br>
 That\u2019s the intent behind WMS Realities. Not to suggest that platforms are flawed, or decisions were misguided, but to surface the practical implications that only become visible with experience. Growth has a way of revealing what was assumed, what was deferred, and what truly scales. 
 <br><br>
-The goal isn\u2019t to plan for every future scenario. It\u2019s to avoid being surprised by the predictable ones. `}]}],this.emailLink="",this.linkedinLink="",this.blog=this.getUniquebloglists("/WMS-Realities-You-Can-Outgrow-a-WMS-Faster-Than-you-Think")}getUniquebloglists(t){let i=new Set;return this.bloglists.filter(l=>l.link?i.has(l.link)?!1:(i.add(l.link),!0):!0).find(l=>l.link===t)||null}ngOnInit(){if(this.blog){let t=this.blog.title.trim(),i=`https://www.sccodeworks.com${this.blog.link}`,o=encodeURIComponent("Check out this Blog: "+t),l=encodeURIComponent(`Hi,
+The goal isn\u2019t to plan for every future scenario. It\u2019s to avoid being surprised by the predictable ones. `},{contentquote:'<a href="/contact-us" target="_blank" class="quote1">Outgrowing your WMS isn\u2019t a failure\u2014it\u2019s a sign of growth. If you\u2019re starting to feel friction in your operation, let\u2019s talk about what a better-fit solution could look like for where you\u2019re headed next".</a>'}]}],this.emailLink="",this.linkedinLink="",this.blog=this.getUniquebloglists("/WMS-Realities-You-Can-Outgrow-a-WMS-Faster-Than-you-Think")}getUniquebloglists(t){let i=new Set;return this.bloglists.filter(l=>l.link?i.has(l.link)?!1:(i.add(l.link),!0):!0).find(l=>l.link===t)||null}ngOnInit(){if(this.blog){let t=this.blog.title.trim(),i=`https://www.sccodeworks.com${this.blog.link}`,o=encodeURIComponent("Check out this Blog: "+t),l=encodeURIComponent(`Hi,
 
  In the Blog:
 ${t}
@@ -1395,9 +1395,9 @@ ${t}
 <br><br>
 It\u2019s becoming a <b>strategic enabler</b> for organizations dealing with high complexity, high volume, or increasing pressure for real-time visibility. The companies unlocking its full value aren\u2019t treating RFID as a standalone deployment; they\u2019re embedding it into a broader digital strategy that includes analytics, automation, and modern systems integration. 
 <br><br>
-<b>The real question is this:</b> Are you experimenting with RFID or designing your supply chain to scale with it? `},{contentquote:`<i>Ready to turn RFID into a scalable advantage? 
-<br>
-Book a call with our team to see how Codeworks 4.0 integrates RFID directly into your warehouse operations, analytics, and automation stack, so you get real-time visibility without the integration headaches. </i>`}]}],this.emailLink="",this.linkedinLink="",this.blog=this.getUniquebloglists("/RFID-in-the-Supply-Chain-From-Emerging-Tech-to-Strategic-Enabler")}getUniquebloglists(t){let i=new Set;return this.bloglists.filter(l=>l.link?i.has(l.link)?!1:(i.add(l.link),!0):!0).find(l=>l.link===t)||null}ngOnInit(){if(this.blog){let t=this.blog.title.trim(),i=`https://www.sccodeworks.com${this.blog.link}`,o=encodeURIComponent("Check out this Blog: "+t),l=encodeURIComponent(`Hi,
+<b>The real question is this:</b> Are you experimenting with RFID or designing your supply chain to scale with it? `},{contentquote:`<a href="/contact-us" target="_blank" class="quote1"><i>Ready to turn RFID into a scalable advantage? </a>
+<br><a href="/contact-us" target="_blank" class="quote1">
+Book a call with our team to see how Codeworks 4.0 integrates RFID directly into your warehouse operations, analytics, and automation stack, so you get real-time visibility without the integration headaches. </a></i>`}]}],this.emailLink="",this.linkedinLink="",this.blog=this.getUniquebloglists("/RFID-in-the-Supply-Chain-From-Emerging-Tech-to-Strategic-Enabler")}getUniquebloglists(t){let i=new Set;return this.bloglists.filter(l=>l.link?i.has(l.link)?!1:(i.add(l.link),!0):!0).find(l=>l.link===t)||null}ngOnInit(){if(this.blog){let t=this.blog.title.trim(),i=`https://www.sccodeworks.com${this.blog.link}`,o=encodeURIComponent("Check out this Blog: "+t),l=encodeURIComponent(`Hi,
 
  In the Blog:
 ${t}
@@ -1448,12 +1448,12 @@ The system continuously evaluates: `,list:["Inventory velocity differences acros
           <br><br>
           The system can recommend: `,list:["Re-slot inventory ahead of the demand shift ","Adjust robot task priorities ","Reallocate labor from low-risk zones to replenishment before shortages occur "]},{content:`No human is micromanaging tasks. The WMS isn\u2019t just assigning work. It is optimizing outcomes based on what\u2019s about to happen. 
 <br><br>
-That\u2019s the path to the autonomous 3PL: not faster execution, but <b>smarter orchestration.</b> `},{heading:"The Takeaway and the Decision That Matters ",content:`Predictive analytics is not a feature. It\u2019s a capability shift. For 3PL executives, the real question is not if predictive analytics belongs in your WMS strategy but <b>when you start preparing your organization to use it effectively. </b>
+That\u2019s the path to the autonomous 3PL: not faster execution, but <b>smarter orchestration.</b> `},{heading:"The Takeaway and the Decision That Matters ",content:`<Predictive analytics is not a feature. It\u2019s a capability shift. For 3PL executives, the real question is not if predictive analytics belongs in your WMS strategy but <b>when you start preparing your organization to use it effectively. </b>
             <br><br>
             The winners won\u2019t be the ones who adopt first. They\u2019ll be the ones who are ready when it becomes unavoidable. `},{contentquote:`<b>The window is open, but it\u2019s closing. </b>
 <br><br>
-If you\u2019re evaluating your next WMS, modernizing analytics, or planning for scalable growth, now is the time to ask a harder question: <br>
-<i>Is our operation built to predict\u2014or only to react?</i> `}]}],this.emailLink="",this.linkedinLink="",this.blog=this.getUniquebloglists("/Predictive-Analytics-Will-Be-the-Next-Non-Negotiable-in-3PL-WMS")}getUniquebloglists(t){let i=new Set;return this.bloglists.filter(l=>l.link?i.has(l.link)?!1:(i.add(l.link),!0):!0).find(l=>l.link===t)||null}ngOnInit(){if(this.blog){let t=this.blog.title.trim(),i=`https://www.sccodeworks.com${this.blog.link}`,o=encodeURIComponent("Check out this Blog: "+t),l=encodeURIComponent(`Hi,
+<a href="/contact-us" target="_blank" class="quote1">If you\u2019re evaluating your next WMS, modernizing analytics, or planning for scalable growth, now is the time to ask a harder question: </a><br>
+<i><a href="/contact-us" target="_blank" class="quote1">Is our operation built to predict\u2014or only to react?</a></i> `}]}],this.emailLink="",this.linkedinLink="",this.blog=this.getUniquebloglists("/Predictive-Analytics-Will-Be-the-Next-Non-Negotiable-in-3PL-WMS")}getUniquebloglists(t){let i=new Set;return this.bloglists.filter(l=>l.link?i.has(l.link)?!1:(i.add(l.link),!0):!0).find(l=>l.link===t)||null}ngOnInit(){if(this.blog){let t=this.blog.title.trim(),i=`https://www.sccodeworks.com${this.blog.link}`,o=encodeURIComponent("Check out this Blog: "+t),l=encodeURIComponent(`Hi,
 
  In the Blog:
 ${t}
