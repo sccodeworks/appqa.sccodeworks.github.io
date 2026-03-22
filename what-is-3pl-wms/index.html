@@ -1,0 +1,502 @@
+<!DOCTYPE html><html class="no-js sticky-header" lang="en" data-critters-container><head>
+    <base href="/">
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>What is a 3PL WMS? The Definitive Guide | SC Codeworks</title>
+    <meta name="description" content="Everything you need to know about 3PL warehouse management systems. Learn key features, benefits, how to choose, and implementation best practices for third-party logistics.">
+    <link rel="canonical" href="https://www.sccodeworks.com/what-is-3pl-wms/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SC Codeworks">
+
+<!-- IMPORTANT -->
+<meta property="og:title" content="What is a 3PL WMS? The Definitive Guide | SC Codeworks">
+<meta property="og:description" content="Everything you need to know about 3PL warehouse management systems. Learn key features, benefits, how to choose, and implementation best practices for third-party logistics.">
+
+<meta property="og:url" content="https://www.sccodeworks.com/what-is-3pl-wms/">
+<meta property="og:image" content="https://www.sccodeworks.com/assets/images/logo/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+     <!-- <meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube.com https://www.youtube-nocookie.com;"> -->
+<meta http-equiv="Content-Security-Policy" content="
+script-src 'self'
+https://www.google.com
+https://www.gstatic.com
+https://www.googletagmanager.com
+https://www.google-analytics.com
+https://snap.licdn.com
+https://platform.linkedin.com
+https://www.getdrip.com
+https://tag.getdrip.com
+'unsafe-inline'
+'unsafe-eval';
+
+form-action 'self' https://www.getdrip.com;
+">
+<script async src="https://tag.getdrip.com/4743834.js"></script>
+ <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+    <!-- CSS
+	============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/icomoon.css">
+    <link rel="stylesheet" href="assets/css/vendor/remixicon.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnifypopup.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animation.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/jqueru-ui-min.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/tipped.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QRPDPKSS8K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QRPDPKSS8K');
+  </script>
+
+
+
+  <script type="text/javascript">
+    _linkedin_partner_id = "7392988";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function () {
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript"; b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })();
+  </script>
+
+<style>
+.seo-content-area { padding: 80px 0; }
+.seo-content-area h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 15px; color: #231f40; }
+.seo-content-area h2 { font-size: 1.6rem; font-weight: 600; margin-top: 40px; margin-bottom: 15px; color: #231f40; }
+.seo-content-area h3 { font-size: 1.3rem; font-weight: 600; margin-top: 25px; margin-bottom: 10px; color: #231f40; }
+.seo-content-area p { font-size: 1rem; line-height: 1.8; color: #555; margin-bottom: 15px; }
+.seo-content-area ul, .seo-content-area ol { margin-bottom: 20px; padding-left: 20px; }
+.seo-content-area ul li, .seo-content-area ol li { font-size: 1rem; line-height: 1.8; color: #555; margin-bottom: 8px; }
+.faq-item { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+.faq-item h3 { color: #7152E1; font-size: 1.15rem; }
+.cta-section { background: linear-gradient(135deg, #7152E1 0%, #231f40 100%); padding: 60px 40px; border-radius: 12px; color: #fff; text-align: center; margin-top: 50px; }
+.cta-section h2 { color: #fff !important; }
+.cta-section p { color: #e0d8f7 !important; }
+.cta-section a.edu-btn { background: #fff; color: #7152E1 !important; padding: 14px 30px; border-radius: 5px; font-weight: 600; text-decoration: none; display: inline-block; margin: 10px; }
+.cta-section a.edu-btn:hover { background: #e0d8f7; }
+.breadcrumb-seo { padding: 10px 0; font-size: 0.9rem; color: #888; }
+.breadcrumb-seo a { color: #7152E1; text-decoration: none; }
+.toc-box { background: #f8f7fd; border: 1px solid #e0d8f7; border-radius: 8px; padding: 25px 30px; margin-bottom: 30px; }
+.toc-box h3 { margin-top: 0; color: #7152E1; }
+.toc-box ol li { margin-bottom: 5px; }
+.toc-box a { color: #7152E1; text-decoration: none; }
+.toc-box a:hover { text-decoration: underline; }
+.related-resources { background: #f8f7fd; border-radius: 8px; padding: 30px; margin-top: 40px; }
+.related-resources h2 { margin-top: 0; }
+.related-resources ul li a { color: #7152E1; text-decoration: none; }
+.related-resources ul li a:hover { text-decoration: underline; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What is a 3PL WMS? The Complete Guide to Third-Party Logistics Warehouse Management",
+  "url": "https://www.sccodeworks.com/what-is-3pl-wms/",
+  "datePublished": "2026-03-20",
+  "dateModified": "2026-03-20",
+  "author": {
+    "@type": "Organization",
+    "name": "SC Codeworks",
+    "url": "https://www.sccodeworks.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SC Codeworks",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.sccodeworks.com/assets/images/logo/logo.png"
+    }
+  },
+  "description": "Everything you need to know about 3PL warehouse management systems. Learn key features, benefits, how to choose, and implementation best practices for third-party logistics.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.sccodeworks.com/what-is-3pl-wms/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a 3PL WMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 3PL WMS (Third-Party Logistics Warehouse Management System) is specialized software designed for warehouse operators who store and fulfill orders on behalf of multiple clients. Unlike a standard WMS built for single-company operations, a 3PL WMS includes multi-client management, client-specific billing, individual SLAs, client portals, and the ability to run different workflows for different customers within the same warehouse."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is a 3PL WMS different from a standard WMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard WMS manages inventory and warehouse operations for a single company. A 3PL WMS adds multi-tenant capabilities including separate client inventories within shared space, client-specific billing rules and rate structures, individual reporting and client portals, customizable workflows per client, and SLA tracking and compliance monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to implement a 3PL WMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Implementation timelines vary based on complexity, but most 3PL WMS implementations take between 8 and 20 weeks. Factors that influence the timeline include the number of warehouse locations, number of clients to onboard, integration requirements with existing ERP and TMS systems, data migration complexity, and the level of customization required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What integrations should a 3PL WMS support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 3PL WMS should integrate with ERP systems (SAP, Oracle, NetSuite), transportation management systems (TMS), EDI platforms for standardized data exchange, e-commerce platforms (Shopify, Amazon, WooCommerce), shipping carriers and rate shopping tools, accounting software for billing reconciliation, and warehouse automation equipment such as conveyors and robotics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a 3PL WMS handle both B2B and B2C fulfillment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Modern 3PL WMS platforms like Codeworks Enterprise are designed to handle both B2B distribution (pallet and case-level shipping to retail and wholesale customers) and B2C e-commerce fulfillment (individual order picking, packing, and shipping) within the same warehouse and even for the same client."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I look for when choosing a 3PL WMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Key factors include multi-client architecture, flexible billing capabilities, client portal access, scalability to grow with your business, integration capabilities with existing systems, the vendor's industry experience with 3PL operations, implementation support and training, and ongoing customer support quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a 3PL WMS improve client retention?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 3PL WMS improves client retention by providing real-time inventory visibility through client portals, delivering accurate and transparent billing, meeting SLA commitments consistently, offering detailed reporting and analytics, enabling faster onboarding for new product lines, and reducing errors in picking, packing, and shipping."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.sccodeworks.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "What is a 3PL WMS?",
+      "item": "https://www.sccodeworks.com/what-is-3pl-wms/"
+    }
+  ]
+}
+</script>
+</head>
+
+<body><!--nghm-->
+    <noscript>
+    <img loading="lazy" height="1" width="1" style="display:none;" alt="linkedin" src="https://px.ads.linkedin.com/collect/?pid=7392988&amp;fmt=gif">
+  </noscript>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  	<![endif]-->
+    <app-root _nghost-ng-c1057808998 ng-version="17.3.12" ngh="0" ng-server-context="ssg"><app-layout _ngcontent-ng-c1057808998 _nghost-ng-c4255945392 ngh="3"><app-header _ngcontent-ng-c4255945392 _nghost-ng-c445454372 ngh="0"><header _ngcontent-ng-c445454372 class="edu-header header-style-1 header-fullwidth"><div _ngcontent-ng-c445454372 id="edu-sticky-placeholder"><div _ngcontent-ng-c445454372 class="header-mainmenu"><div _ngcontent-ng-c445454372 class="container-fluid"><div _ngcontent-ng-c445454372 class="header-navbar"><div _ngcontent-ng-c445454372 class="header-brand"><div _ngcontent-ng-c445454372 class="logo"><a _ngcontent-ng-c445454372 routerlink="/" routerlinkactive="active" href="/" class><img loading="lazy" _ngcontent-ng-c445454372 src="assets/images/logo/logo-light-2.png" alt="Corporate Logo" class="logo-light"><img loading="lazy" _ngcontent-ng-c445454372 src="assets/images/logo/logo-light-2.png" alt="Corporate Logo" class="logo-dark"></a></div></div><div _ngcontent-ng-c445454372 class="header-mainnav"><nav _ngcontent-ng-c445454372 class="mainmenu-nav"><ul _ngcontent-ng-c445454372 class="mainmenu"><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/" class>Home</a></li><li _ngcontent-ng-c445454372 class="has-droupdown"><a _ngcontent-ng-c445454372 class>About Us</a><ul _ngcontent-ng-c445454372 class="submenu"><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/about" class>About Us</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Associations" class>Associations</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Featured-in" class>Featured In</a></li></ul></li><li _ngcontent-ng-c445454372 class="has-droupdown"><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Industries" class>Industries </a><ul _ngcontent-ng-c445454372 class="submenu"><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/3PL-Warehousing" routerlinkactive="active" href="/3PL-Warehousing" class>3PL Warehouses</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Manufacturing-Warehouses" class>Manufacturing Warehouses</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Distribution-and-Warehouses" class>Distribution </a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/E-Commerce-DTC-Fulfillment" class>E-Commerce Fulfillment</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Government-Warehousing" class> Government Warehouses</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Asset-Management" class> Asset Management </a></li></ul></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/solution" class>Solutions</a></li><li _ngcontent-ng-c445454372 class="has-droupdown"><a _ngcontent-ng-c445454372 routerlinkactive="active" class>Resources</a><ul _ngcontent-ng-c445454372 class="submenu"><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/resources" routerlinkactive="active" href="/resources" class>Guides &amp; Downloads</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/blogs-list" class>Blogs</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/resources-newsletters" class>Newsletters</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/resources-videos" class>Videos</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/casestudies-list" class>Case Studies</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/White-Papers" class>White Papers </a></li></ul></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 href="https://docs.sccodeworks.com/" target="_blank"> Customer Login </a></li></ul></nav></div><div _ngcontent-ng-c445454372 class="header-right"><ul _ngcontent-ng-c445454372 class="header-action"><li _ngcontent-ng-c445454372 class="header-btn"><a _ngcontent-ng-c445454372 routerlink="/contact-us" routerlinkactive="active" class="edu-btn btn-medium" href="/contact-us"> Contact Us <i _ngcontent-ng-c445454372 class="icon-4"></i></a></li><li _ngcontent-ng-c445454372 class="mobile-menu-bar d-block d-xl-none"><button _ngcontent-ng-c445454372 class="hamburger-button"><i _ngcontent-ng-c445454372 class="icon-54"></i></button></li></ul></div></div></div></div></div><div _ngcontent-ng-c445454372 class="popup-mobile-menu"><div _ngcontent-ng-c445454372 class="inner"><div _ngcontent-ng-c445454372 class="header-top"><div _ngcontent-ng-c445454372 class="logo"><a _ngcontent-ng-c445454372 routerlink="/" routerlinkactive="active" href="/" class><img loading="lazy" _ngcontent-ng-c445454372 src="assets/images/logo/logo-dark.png" alt="Corporate Logo" class="logo-light"><img loading="lazy" _ngcontent-ng-c445454372 src="assets/images/logo/logo-white.png" alt="Corporate Logo" class="logo-dark"></a></div><div _ngcontent-ng-c445454372 class="close-menu"><button _ngcontent-ng-c445454372 class="close-button"><i _ngcontent-ng-c445454372 class="icon-73"></i></button></div></div><ul _ngcontent-ng-c445454372 class="mainmenu"><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/" routerlinkactive="active" href="/" class>Home</a></li><li _ngcontent-ng-c445454372 class="has-droupdown"><a _ngcontent-ng-c445454372 class>About Us</a><ul _ngcontent-ng-c445454372 class="submenu"><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/about" class>About Us</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Associations" class>Associations</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Featured-in" class>Featured In</a></li></ul></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/solution" routerlinkactive="active" href="/solution" class>Solutions</a></li><li _ngcontent-ng-c445454372 class="has-droupdown"><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Industries" class>Industries </a><ul _ngcontent-ng-c445454372 class="submenu"><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/3PL-Warehousing" routerlinkactive="active" href="/3PL-Warehousing" class>3PL Warehouses</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Manufacturing-Warehouses" class>Manufacturing Warehouses</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Distribution-and-Warehouses" class>Distribution</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/E-Commerce-DTC-Fulfillment" class>E-Commerce Fulfillment</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Government-Warehousing" class> Government Warehouses</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlinkactive="active" href="/Asset-Management" class> Asset Management </a></li></ul></li><li _ngcontent-ng-c445454372 class="has-droupdown"><a _ngcontent-ng-c445454372 routerlinkactive="active" class>Resources</a><ul _ngcontent-ng-c445454372 class="submenu"><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/resources" routerlinkactive="active" href="/resources" class>Guides &amp; Downloads</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/blogs-list" routerlinkactive="active" href="/blogs-list" class>Blogs</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/resources-newsletters" routerlinkactive="active" href="/resources-newsletters" class>Newsletters</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/resources-videos" routerlinkactive="active" href="/resources-videos" class>Videos</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/casestudies-list" routerlinkactive="active" href="/casestudies-list" class>Case Studies</a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/White-Papers" routerlinkactive="active" href="/White-Papers" class>White Papers </a></li></ul></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 routerlink="/contact-us" routerlinkactive="active" href="/contact-us" class> Contact Us </a></li><li _ngcontent-ng-c445454372><a _ngcontent-ng-c445454372 href="https://docs.sccodeworks.com/" target="_blank"> Customer Login </a></li></ul></div></div></header></app-header><router-outlet _ngcontent-ng-c4255945392></router-outlet>
+
+<!-- What is a 3PL WMS Content -->
+<div class="seo-content-area">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+
+<nav class="breadcrumb-seo" aria-label="Breadcrumb">
+  <a href="/">Home</a> &raquo; <span>What is a 3PL WMS?</span>
+</nav>
+
+<h1>What is a 3PL WMS? The Complete Guide to Third-Party Logistics Warehouse Management</h1>
+
+<p>If you operate a third-party logistics warehouse or you are considering outsourcing your warehousing to a 3PL provider, understanding the role of a warehouse management system designed specifically for 3PL operations is essential. A 3PL WMS is not just a standard warehouse management system with a few extra features bolted on. It is a fundamentally different category of software, built from the ground up to handle the unique challenges of managing inventory, labor, billing, and compliance for multiple clients under one roof.</p>
+
+<p>This guide covers everything you need to know about 3PL warehouse management systems: what they are, how they differ from standard WMS platforms, the features that matter most, how to evaluate and choose the right one, and what to expect during implementation.</p>
+
+<!-- Table of Contents -->
+<div class="toc-box">
+<h3>In This Guide</h3>
+<ol>
+<li><a href="#understanding">Understanding 3PL Warehouse Management</a></li>
+<li><a href="#key-features">Key Features of a 3PL WMS</a></li>
+<li><a href="#benefits">Benefits of a Modern 3PL WMS</a></li>
+<li><a href="#how-to-choose">How to Choose the Right 3PL WMS</a></li>
+<li><a href="#implementation">3PL WMS Implementation Best Practices</a></li>
+<li><a href="#future">The Future of 3PL WMS</a></li>
+<li><a href="#faq">Frequently Asked Questions</a></li>
+<li><a href="#resources">Related Resources</a></li>
+</ol>
+</div>
+
+<!-- Section: Understanding 3PL Warehouse Management -->
+<h2 id="understanding">Understanding 3PL Warehouse Management</h2>
+
+<h3>What is a Third-Party Logistics Provider?</h3>
+<p>A third-party logistics provider (3PL) is a company that provides outsourced warehousing, fulfillment, and distribution services to other businesses. Instead of a manufacturer or retailer operating their own warehouse, they contract with a 3PL to store their inventory, pick and pack orders, and ship products to end customers or retail locations. The 3PL model has grown enormously over the past two decades as companies seek to focus on their core competencies and leave logistics operations to specialists.</p>
+
+<p>The 3PL industry in the United States alone generates hundreds of billions of dollars in annual revenue, and the sector continues to grow as e-commerce expansion, supply chain complexity, and the need for geographic distribution drive more companies to outsource their warehousing operations.</p>
+
+<h3>How 3PL Differs from In-House Warehousing</h3>
+<p>The fundamental difference between 3PL warehousing and in-house warehousing is multi-tenancy. An in-house warehouse serves one company. Everything in that warehouse belongs to the same organization, follows the same processes, and gets billed to the same cost center. A 3PL warehouse, by contrast, serves multiple clients simultaneously. Each client may have different products, different handling requirements, different shipping destinations, different SLA expectations, and different billing structures. The 3PL must keep all of these separate while maximizing the efficiency of shared resources like labor, equipment, and space.</p>
+
+<p>This multi-client reality is what makes a purpose-built 3PL WMS necessary. A standard WMS assumes a single owner for all inventory. A 3PL WMS assumes multiple owners, each with their own rules, and provides the tools to manage that complexity without compromising accuracy or efficiency.</p>
+
+<h3>The Role of WMS in 3PL Operations</h3>
+<p>A WMS in a 3PL environment serves as the central nervous system of the operation. It manages every aspect of warehouse activity from the moment a product arrives at the dock to the moment it leaves on a truck. But beyond basic warehouse management, a 3PL WMS also handles client management, billing, reporting, and the client-facing technology (portals, APIs, integrations) that 3PLs need to serve their customers effectively. Without a capable WMS, a 3PL cannot scale beyond a handful of simple clients without drowning in manual processes, billing errors, and inventory discrepancies.</p>
+
+<h3>Multi-Client vs. Single-Client Warehousing</h3>
+<p>Some 3PLs operate dedicated warehouses for a single large client, while others operate shared or multi-client facilities where dozens of clients share the same building. Most 3PLs do both. A 3PL WMS must handle both models gracefully. In a dedicated environment, the system needs to enforce that client's specific workflows and SLAs. In a shared environment, the system needs to keep inventories segregated (logically and sometimes physically), prevent cross-contamination of orders, and allocate shared resources fairly while billing each client accurately for the services consumed.</p>
+
+<!-- Section: Key Features of a 3PL WMS -->
+<h2 id="key-features">Key Features of a 3PL WMS</h2>
+
+<h3>Multi-Client Management and Billing</h3>
+<p>The defining feature of a 3PL WMS is its ability to manage multiple clients within a single system instance. This means maintaining separate inventory records for each client, tracking all warehouse activities by client, and generating accurate invoices based on the services performed for each client. Billing in a 3PL is extraordinarily complex. Clients may be charged for storage (by pallet position, square foot, or cubic foot), handling (receiving, put-away, picking, packing), value-added services (kitting, labeling, assembly), shipping, and various accessorial charges. The WMS must capture all of this activity automatically and feed it into the billing system without manual data entry.</p>
+
+<h3>Client-Specific Workflows and SLAs</h3>
+<p>Different clients have different requirements. One client may require lot tracking and FEFO (first-expired, first-out) picking. Another may need serial number capture at the point of shipment. A third may require specific packaging materials and branded packing slips. A 3PL WMS allows you to configure distinct workflows for each client without building custom code. This configurability is what enables 3PLs to onboard new clients quickly and serve diverse industries from a single platform. SLA tracking is equally important. The WMS should monitor key performance indicators like order accuracy, on-time shipping, and receiving turnaround time, and alert managers when a client's SLAs are at risk.</p>
+
+<h3>Real-Time Inventory Visibility Across Clients</h3>
+<p>Inventory accuracy is the foundation of warehouse operations. In a 3PL, the stakes are even higher because you are managing someone else's inventory. A 3PL WMS provides real-time visibility into inventory levels, locations, lot numbers, expiration dates, and status codes for every client. This visibility extends not just to warehouse managers but to clients themselves through client portals and API integrations. When a client can log in and see exactly what is in stock, what orders are in process, and what has shipped, the volume of phone calls and emails drops dramatically, and trust increases.</p>
+
+<h3>Automated Billing and Invoicing</h3>
+<p>Manual billing is one of the biggest pain points for 3PLs that lack a capable WMS. When warehouse activities are tracked on paper or in spreadsheets, billing becomes a monthly ordeal of piecing together activity logs, storage snapshots, and handling counts. Revenue leakage is virtually guaranteed. A 3PL WMS automates billing by capturing every billable activity as it happens. Storage charges are calculated automatically based on daily snapshots. Handling charges are accrued with every receiving transaction, pick, pack, and ship. At the end of the billing period, the system generates detailed invoices that clients can audit and verify. This automation eliminates revenue leakage, reduces billing disputes, and accelerates cash flow.</p>
+
+<h3>Client Portals for Self-Service</h3>
+<p>Modern 3PL clients expect self-service access to their warehouse data. A client portal provides visibility into inventory, orders, shipments, and billing without requiring a phone call or email to the 3PL's customer service team. The best 3PL WMS platforms include built-in client portals that allow clients to view real-time inventory, place orders, track shipments, download reports, and review invoices. This self-service capability is a significant competitive differentiator for 3PLs.</p>
+
+<h3>EDI and API Integrations</h3>
+<p>3PLs must exchange data with their clients' systems, carriers, and other supply chain partners. EDI (Electronic Data Interchange) remains the standard for many large clients, with transaction sets like the 940 (warehouse shipping order), 945 (warehouse shipping advice), 943 (warehouse stock transfer shipment advice), and 944 (warehouse stock transfer receipt advice) forming the backbone of 3PL-client data exchange. Modern 3PL WMS platforms also support REST APIs for real-time integrations with e-commerce platforms, TMS systems, and other cloud applications. The ability to integrate quickly with a new client's systems is a key factor in onboarding speed.</p>
+
+<h3>Labor Management and Productivity Tracking</h3>
+<p>Labor is typically the largest operating cost in a warehouse. A 3PL WMS should include labor management capabilities that track individual worker productivity, measure performance against engineered standards, and provide the data needed to plan labor requirements based on anticipated volume. In a multi-client environment, labor tracking also feeds into billing: if a client's products require more handling time than average, that cost should be reflected in their rates. Labor management data also helps 3PLs identify training opportunities, reward top performers, and allocate staff efficiently across client accounts.</p>
+
+<!-- Section: Benefits of a Modern 3PL WMS -->
+<h2 id="benefits">Benefits of a Modern 3PL WMS</h2>
+
+<h3>Faster Customer Onboarding</h3>
+<p>Winning a new client is only the beginning. The 3PL must then onboard that client, which involves setting up their inventory, configuring workflows, establishing integrations, and training the warehouse team on any client-specific requirements. A purpose-built 3PL WMS accelerates this process with configurable client profiles, template-based workflows, and standardized integration frameworks. What might take weeks with a generic WMS or a spreadsheet-based operation can be accomplished in days with the right platform. Faster onboarding means faster time to revenue and a better first impression on new clients.</p>
+
+<h3>Improved Accuracy and Reduced Mispicks</h3>
+<p>Order accuracy is the single most important metric for most 3PL clients. A mispick costs money to correct (return shipping, restocking, reshipping), damages the client's relationship with their customer, and erodes trust in the 3PL. A 3PL WMS enforces accuracy through barcode scanning at every step, system-directed picking that guides workers to the correct location and item, and validation checks that catch errors before they leave the building. Leading 3PL WMS platforms help operations achieve 99.9% or higher pick accuracy rates.</p>
+
+<h3>Scalability Without Proportional Cost Increases</h3>
+<p>One of the primary advantages of the 3PL model is that 3PLs can grow revenue by adding clients without proportionally increasing their fixed costs. But this only works if the WMS can handle additional clients and volume without requiring significant additional infrastructure or labor. A modern 3PL WMS, particularly a cloud-based platform, scales to accommodate new clients, higher transaction volumes, and additional warehouse locations without the 3PL needing to invest in new servers, hire additional IT staff, or undergo costly system upgrades.</p>
+
+<h3>Real-Time Reporting and Dashboards</h3>
+<p>3PL operators need to monitor the performance of their entire operation at a glance, while also being able to drill down into individual client metrics. A 3PL WMS provides dashboards that show real-time throughput, inventory levels, order status, labor productivity, and SLA compliance across all clients. These dashboards enable proactive management: when a problem is developing, managers can see it in real time and take corrective action before it becomes a customer complaint.</p>
+
+<h3>Competitive Differentiation</h3>
+<p>The 3PL market is competitive. Clients have options, and they evaluate 3PLs not just on price but on capability. A 3PL that can demonstrate a modern, full-featured WMS during the sales process has a significant advantage over competitors running outdated systems or managing operations with spreadsheets. The WMS becomes a selling point. Client portals, real-time visibility, automated billing, and integration flexibility are all capabilities that win deals and retain clients.</p>
+
+<!-- Section: How to Choose the Right 3PL WMS -->
+<h2 id="how-to-choose">How to Choose the Right 3PL WMS</h2>
+
+<h3>Key Evaluation Criteria</h3>
+<p>When evaluating 3PL WMS platforms, focus on these critical areas:</p>
+<ul>
+<li><strong>Multi-client architecture:</strong> Is the system built for multi-client operations, or is it a single-tenant system with multi-client features added on?</li>
+<li><strong>Billing flexibility:</strong> Can the system handle your billing models, including storage, handling, value-added services, and custom rate structures?</li>
+<li><strong>Integration capabilities:</strong> Does the system support the EDI transactions and API integrations your clients require?</li>
+<li><strong>Scalability:</strong> Can the system grow with your business without requiring a rip-and-replace in two years?</li>
+<li><strong>Industry experience:</strong> Does the vendor understand 3PL operations, or are they primarily an in-house WMS vendor who added multi-client features?</li>
+<li><strong>Implementation support:</strong> What does the vendor's implementation process look like? Who does the work?</li>
+<li><strong>Total cost of ownership:</strong> What is the all-in cost including licensing, implementation, training, and ongoing support?</li>
+</ul>
+
+<h3>Questions to Ask Vendors</h3>
+<p>During vendor evaluations, ask these questions to get beyond marketing materials:</p>
+<ul>
+<li>How many 3PL clients are currently running on your platform?</li>
+<li>Can you provide references from 3PLs of similar size and complexity?</li>
+<li>How do you handle client-specific billing configurations?</li>
+<li>What is your typical implementation timeline for a 3PL with our profile?</li>
+<li>How do you handle system updates and new feature releases?</li>
+<li>What does your support model look like after go-live?</li>
+<li>Can you demonstrate the client portal and reporting capabilities?</li>
+</ul>
+
+<h3>Red Flags to Watch For</h3>
+<p>Be cautious if a vendor cannot provide 3PL-specific references, if the demo feels generic rather than tailored to multi-client operations, if billing configuration requires custom development rather than configuration, or if the vendor's implementation team lacks 3PL operations experience. Also watch for vendors who promise everything but cannot demonstrate it in the actual product. A demo should show real multi-client workflows, not slide decks.</p>
+
+<h3>Total Cost of Ownership Considerations</h3>
+<p>The sticker price of a WMS is just the beginning. Total cost of ownership includes implementation services, data migration, training, hardware (RF scanners, label printers, mobile devices), ongoing licensing or subscription fees, support and maintenance, and the cost of future integrations and customizations. A system that is inexpensive to license but requires extensive custom development to meet your needs will ultimately cost more than a platform that is configurable out of the box. Ask vendors for a complete cost picture, not just the license fee.</p>
+
+<h3>Implementation Timeline Expectations</h3>
+<p>A realistic 3PL WMS implementation takes 8 to 20 weeks, depending on complexity. Be wary of vendors who promise a go-live in 2 weeks (they are likely cutting corners) or those who say it will take a year (they may lack efficiency in their implementation process). A good implementation timeline includes a discovery and process mapping phase, system configuration and testing, integration development and testing, data migration and validation, user training, a pilot or parallel run period, and a supported go-live.</p>
+
+<!-- Section: 3PL WMS Implementation Best Practices -->
+<h2 id="implementation">3PL WMS Implementation Best Practices</h2>
+
+<h3>Planning and Process Mapping</h3>
+<p>Before configuring a single screen in the WMS, invest time in mapping your current warehouse processes and defining your target-state workflows. This process mapping exercise identifies gaps between how you work today and how the new system will support your operations. It also surfaces the client-specific requirements that must be configured in the system. Involve your warehouse operations team in this process. They know the day-to-day realities that matter most.</p>
+
+<h3>Data Migration Strategy</h3>
+<p>Migrating data from an old system (or from spreadsheets) to a new WMS is one of the most underestimated aspects of implementation. Your data migration strategy should address inventory records (quantities, locations, lot numbers, status codes), client master data, item master data, rate and billing configurations, and historical data for reporting continuity. Clean your data before migration. Bad data in a new system creates immediate operational problems and undermines confidence in the platform.</p>
+
+<h3>Training and Change Management</h3>
+<p>Technology alone does not transform operations. People do. Your training plan should cover all user roles: warehouse associates who will use RF scanners, supervisors who will manage workflows, managers who will use reporting dashboards, and client-facing staff who will support client portal users. Do not underestimate resistance to change. Even a clearly superior system will face pushback from people who are comfortable with the old way of doing things. Executive sponsorship, clear communication about why the change is happening, and early involvement of key users in the implementation process all help smooth the transition.</p>
+
+<h3>Go-Live Planning</h3>
+<p>Your go-live plan should define exactly how the transition will happen. Will you cut over all clients at once, or migrate them in phases? Will you run the old and new systems in parallel for a period? What is your fallback plan if something goes wrong? Go-live is a high-stakes moment for a 3PL because your clients' orders cannot stop. Plan for extra staffing during the first week, have the vendor's support team on-site or on standby, and communicate proactively with your clients about the transition timeline and any potential impacts.</p>
+
+<h3>Post-Implementation Optimization</h3>
+<p>Going live is not the finish line. The first 30 to 90 days after go-live are critical for identifying opportunities to optimize workflows, fine-tune configurations, and address any issues that were not apparent during testing. Schedule regular review sessions with your vendor and your operations team to assess how the system is performing, identify areas for improvement, and plan for the next wave of enhancements.</p>
+
+<!-- Section: The Future of 3PL WMS -->
+<h2 id="future">The Future of 3PL WMS</h2>
+
+<h3>AI and Predictive Analytics</h3>
+<p>Artificial intelligence is beginning to transform warehouse management. In the near term, AI-powered features like demand forecasting, intelligent slotting optimization, and predictive labor planning will help 3PLs operate more efficiently and proactively. Rather than reacting to volume spikes after they happen, AI-enabled WMS platforms will predict them and recommend staffing and space adjustments in advance. SC Codeworks is investing in this area with CODI, an AI assistant that brings intelligent insights directly into the warehouse management workflow.</p>
+
+<h3>Robotics and Automation Integration</h3>
+<p>Warehouse robotics adoption is accelerating, and 3PLs are increasingly deploying autonomous mobile robots (AMRs), automated storage and retrieval systems (AS/RS), and goods-to-person picking stations. A future-ready 3PL WMS must integrate seamlessly with these automation technologies, orchestrating the work of both human workers and robotic systems to maximize throughput and minimize cost per unit shipped.</p>
+
+<h3>Cloud-Native Platforms</h3>
+<p>The shift from on-premise WMS installations to cloud-native platforms is well underway. Cloud-native WMS platforms offer lower upfront costs, automatic updates, better scalability, and the ability to connect warehouse operations to the broader ecosystem of cloud applications. For 3PLs operating multiple locations, cloud-native platforms provide the ability to manage all sites from a single platform without maintaining separate server infrastructure at each location.</p>
+
+<h3>Real-Time Visibility Across the Supply Chain</h3>
+<p>The future of 3PL WMS extends beyond the four walls of the warehouse. Clients increasingly expect end-to-end visibility that encompasses inbound shipments, warehouse processing, outbound delivery, and final-mile tracking. 3PL WMS platforms are evolving to integrate with transportation management systems, carrier APIs, and IoT devices to provide this comprehensive visibility in real time. The 3PLs that can offer this level of transparency will win more business and retain clients longer.</p>
+
+<!-- Section: FAQ -->
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>What is a 3PL WMS?</h3>
+<p>A 3PL WMS (Third-Party Logistics Warehouse Management System) is specialized software designed for warehouse operators who store and fulfill orders on behalf of multiple clients. Unlike a standard WMS built for single-company operations, a 3PL WMS includes multi-client management, client-specific billing, individual SLAs, client portals, and the ability to run different workflows for different customers within the same warehouse.</p>
+</div>
+
+<div class="faq-item">
+<h3>How is a 3PL WMS different from a standard WMS?</h3>
+<p>A standard WMS manages inventory and warehouse operations for a single company. A 3PL WMS adds multi-tenant capabilities including separate client inventories within shared space, client-specific billing rules and rate structures, individual reporting and client portals, customizable workflows per client, and SLA tracking and compliance monitoring. These are not minor additions; they represent a fundamentally different architecture.</p>
+</div>
+
+<div class="faq-item">
+<h3>How long does it take to implement a 3PL WMS?</h3>
+<p>Implementation timelines vary based on complexity, but most 3PL WMS implementations take between 8 and 20 weeks. Factors that influence the timeline include the number of warehouse locations, number of clients to onboard, integration requirements with existing ERP and TMS systems, data migration complexity, and the level of customization required. A phased approach, starting with a pilot client and expanding, is often the most effective strategy.</p>
+</div>
+
+<div class="faq-item">
+<h3>What integrations should a 3PL WMS support?</h3>
+<p>A 3PL WMS should integrate with ERP systems (SAP, Oracle, NetSuite), transportation management systems (TMS), EDI platforms for standardized data exchange, e-commerce platforms (Shopify, Amazon, WooCommerce), shipping carriers and rate shopping tools, accounting software for billing reconciliation, and warehouse automation equipment such as conveyors, sorters, and robotics. The system should support both EDI and modern REST API integration methods.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can a 3PL WMS handle both B2B and B2C fulfillment?</h3>
+<p>Yes. Modern 3PL WMS platforms like Codeworks Enterprise are designed to handle both B2B distribution (pallet and case-level shipping to retail and wholesale customers) and B2C e-commerce fulfillment (individual order picking, packing, and shipping) within the same warehouse and even for the same client. The system manages different picking strategies, packing requirements, and shipping methods for each fulfillment channel.</p>
+</div>
+
+<div class="faq-item">
+<h3>What should I look for when choosing a 3PL WMS?</h3>
+<p>Key factors include multi-client architecture designed from the ground up, flexible billing capabilities that match your rate structures, client portal access for self-service, scalability to grow with your business, integration capabilities with your clients' and carriers' systems, the vendor's industry experience with 3PL operations, implementation support and training resources, and ongoing customer support quality. Ask for 3PL-specific references and insist on a demo that shows real multi-client workflows.</p>
+</div>
+
+<div class="faq-item">
+<h3>How does a 3PL WMS improve client retention?</h3>
+<p>A 3PL WMS improves client retention by providing real-time inventory visibility through client portals, delivering accurate and transparent billing, meeting SLA commitments consistently through automated tracking and alerting, offering detailed reporting and analytics that demonstrate value, enabling faster onboarding for new product lines, and reducing errors in picking, packing, and shipping. When clients trust their 3PL's operational capabilities, they stay longer and grow their business with that provider.</p>
+</div>
+
+<!-- Related Resources -->
+<div class="related-resources" id="resources">
+<h2>Related Resources</h2>
+<p>Continue learning about 3PL warehouse management with these resources from SC Codeworks:</p>
+<ul>
+<li><a href="/3PL-Warehousing/">3PL Warehousing Solutions</a> &mdash; Learn how Codeworks Enterprise serves third-party logistics providers.</li>
+<li><a href="/casestudies-list/">Case Studies</a> &mdash; See how 3PLs and warehouse operators have transformed their operations with Codeworks.</li>
+<li><a href="/is-your-wms-leaving-3pl-money-on-the-table/">Is Your WMS Leaving 3PL Money on the Table?</a> &mdash; Discover how the right WMS captures revenue that manual processes miss.</li>
+<li><a href="/how-to-choose-wms/">How to Choose a Warehouse Management System</a> &mdash; A step-by-step guide to evaluating and selecting a WMS.</li>
+<li><a href="/wms-implementation-best-practices/">WMS Implementation Best Practices</a> &mdash; Best practices for planning and executing a successful WMS go-live.</li>
+<li><a href="/edi-for-3pls/">EDI for 3PLs</a> &mdash; Understanding EDI integration in third-party logistics operations.</li>
+</ul>
+</div>
+
+<!-- CTA Section -->
+<div class="cta-section">
+<h2>Ready to See a 3PL WMS Built for Your Business?</h2>
+<p>Codeworks Enterprise is a warehouse management system built specifically for the complexities of third-party logistics. Schedule a demo to see multi-client management, automated billing, client portals, and more in action.</p>
+<a href="/contact-us" class="edu-btn">Schedule a Demo</a>
+<a href="tel:6143890692" class="edu-btn">Call (614) 389-0692</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- End What is a 3PL WMS Content -->
+
+<app-footer _ngcontent-ng-c4255945392 _nghost-ng-c2881028881 ngh="2"><div _ngcontent-ng-c2881028881 id="main-wrapper" class="main-wrapper sticky-header"><footer _ngcontent-ng-c2881028881 class="edu-footer footer-lighten bg-image footer-style-1"><div _ngcontent-ng-c2881028881 class="footer-top"><div _ngcontent-ng-c2881028881 class="container"><div _ngcontent-ng-c2881028881 class="row g-12"><div _ngcontent-ng-c2881028881 class="col-lg-2 col-lg-3"><div _ngcontent-ng-c2881028881 class="edu-footer-widget"><div _ngcontent-ng-c2881028881 class="logo"><a _ngcontent-ng-c2881028881 href="index.html"><img loading="lazy" _ngcontent-ng-c2881028881 src="assets/images/logo/logo-dark.png" alt="Corporate Logo" class="logo-light"><img loading="lazy" _ngcontent-ng-c2881028881 src="assets/images/logo/logo-white.png" alt="Corporate Logo" class="logo-dark"></a></div><div _ngcontent-ng-c2881028881 class="widget-information"><ul _ngcontent-ng-c2881028881 class="information-list"><br _ngcontent-ng-c2881028881><li _ngcontent-ng-c2881028881><span _ngcontent-ng-c2881028881>Address:<br _ngcontent-ng-c2881028881></span>6388 Fiesta Drive, <br _ngcontent-ng-c2881028881> Columbus, Ohio 43235 </li><li _ngcontent-ng-c2881028881><span _ngcontent-ng-c2881028881>Call:</span><a _ngcontent-ng-c2881028881 href="tel:(614) 389-0692">(614) 389-0692</a></li></ul></div></div></div><div _ngcontent-ng-c2881028881 class="col-lg-6 col-md-6"><div _ngcontent-ng-c2881028881 class="edu-footer-widget"><h4 _ngcontent-ng-c2881028881 class="widget-title">Subscribe to our Newsletter </h4><div _ngcontent-ng-c2881028881 class="inner"><p _ngcontent-ng-c2881028881 class="description"> Please Subscribe for Latest Updates </p><div _ngcontent-ng-c2881028881 class="input-group footer-subscription-form"><input _ngcontent-ng-c2881028881 type="email" placeholder="Your email" class="form-control ng-untouched ng-pristine ng-valid" value><button _ngcontent-ng-c2881028881 class="edu-btn btn-medium" style="color: #FFFFFF !important;"> Subscribe <i _ngcontent-ng-c2881028881 class="icon-4"></i></button></div></div><ul _ngcontent-ng-c2881028881 class="social-share icon-transparent"><li _ngcontent-ng-c2881028881><a _ngcontent-ng-c2881028881 href="https://www.facebook.com/SCCodeworks/" target="_blank" class="color-fb"><i _ngcontent-ng-c2881028881 class="icon-facebook"></i></a></li><li _ngcontent-ng-c2881028881><a _ngcontent-ng-c2881028881 href="https://www.linkedin.com/company/sccodeworks/posts/?feedView=all" target="_blank" class="color-linkd"><i _ngcontent-ng-c2881028881 class="icon-linkedin2"></i></a></li><li _ngcontent-ng-c2881028881><a _ngcontent-ng-c2881028881 href="https://www.youtube.com/@SCcodeworks" target="_blank" class="color-yt"><i _ngcontent-ng-c2881028881 class="icon-youtube"></i></a></li></ul></div></div><div _ngcontent-ng-c2881028881 align="right" class="col-lg-2 col-md-6"><div _ngcontent-ng-c2881028881 class="inner"><h5 _ngcontent-ng-c2881028881>Legal</h5><a _ngcontent-ng-c2881028881 href="/privacy-policy" target="_blank" class="legal"> Privacy Policy</a></div></div></div></div></div><div _ngcontent-ng-c2881028881 class="copyright-area"><div _ngcontent-ng-c2881028881 class="container"><div _ngcontent-ng-c2881028881 class="row"><div _ngcontent-ng-c2881028881 class="col-lg-12"><div _ngcontent-ng-c2881028881 class="inner text-center"><p _ngcontent-ng-c2881028881> Copyright &copy; SC Codeworks. All rights reserved </p></div></div></div></div></div></footer></div></app-footer></app-layout></app-root>
+    <!-- JS
+	============================================ -->
+    <script src="assets/js/vendor/modernizr.min.js"></script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/sal.min.js"></script>
+    <script src="assets/js/vendor/jquery.waypoints.js"></script>
+    <script src="assets/js/vendor/backtotop.min.js"></script>
+    <script src="assets/js/vendor/magnifypopup.min.js"></script>
+    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/js/vendor/jQuery.rProgressbar.min.js"></script>
+    <script src="assets/js/vendor/easypie.js"></script>
+    <script src="assets/js/vendor/odometer.min.js"></script>
+    <script src="assets/js/vendor/isotop.min.js"></script>
+    <script src="assets/js/vendor/imageloaded.min.js"></script>
+    <script src="assets/js/vendor/lightbox.min.js"></script>
+    <script src="assets/js/vendor/paralax.min.js"></script>
+    <script src="assets/js/vendor/paralax-scroll.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/svg-inject.min.js"></script>
+    <script src="assets/js/vendor/vivus.min.js"></script>
+    <script src="assets/js/vendor/tipped.min.js"></script>
+    <script src="assets/js/vendor/smooth-scroll.min.js"></script>
+    <script src="assets/js/vendor/isInViewport.jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof sal === 'function') {
+      sal();
+    }
+    if (typeof initBackToTop === 'function') {
+      initBackToTop();
+    }
+  });
+</script>
+
+</body></html>
