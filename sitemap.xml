@@ -421,6 +421,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.sccodeworks.com/how-3pls-evaluate-wms/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sccodeworks.com/cold-chain-wms-checklist/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sccodeworks.com/3pl-billing-leakage-audit/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.sccodeworks.com/how-to-choose-wms/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
