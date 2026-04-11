@@ -636,6 +636,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.sccodeworks.com/rfid-supply-chain-compliance-3pl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.sccodeworks.com/3pl-warehousing/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
