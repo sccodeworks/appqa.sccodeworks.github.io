@@ -34970,18 +34970,37 @@ blockquote .author {
     margin-top: 110px !important;
 }
 .blog-details-area .blog-title {
-    margin-bottom: 8px !important;
+    margin-bottom: 6px !important;
 }
 .blog-details-area .blog-meta {
-    padding-bottom: 4px !important;
-    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    align-items: center;
+    gap: 12px;
+}
+/* Override global `.blog-author { padding: 70px 0; display: flex }`
+   which was designed for a large author card with thumbnail — our
+   blog-meta only renders a tiny inline label, so collapse it. */
+.blog-details-area .blog-meta .blog-author {
+    padding: 0 !important;
+    display: inline !important;
+    font-style: italic;
+    color: var(--color-body);
+}
+.blog-details-area .blog-meta time {
+    color: var(--color-body);
+    font-style: normal;
+}
+.blog-details-area .blog-meta__sep {
+    color: var(--color-body);
+    opacity: 0.6;
 }
 .blog-details-area .social-share.icon-transparent.blog {
-    margin-top: 0 !important;
-    margin-bottom: 8px !important;
+    margin-top: 4px !important;
+    margin-bottom: 6px !important;
 }
 .blog-details-area .blog-image {
-    margin-top: 10px;
+    margin-top: 6px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .edu-section-gap {
